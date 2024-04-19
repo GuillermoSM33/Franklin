@@ -13,6 +13,7 @@ import Home from "./screens/Home";
 import Presion from "./screens/Presion"
 import Ph from "./screens/Ph"
 import Temperatura from "./screens/Temperatura";
+import Ultrasonico from "./screens/Ultrasonico";
 
 //Creamos la constante de stack
 
@@ -41,13 +42,13 @@ function MyStack() {
             >
             </MenuStackNavigator.Screen>
             <MenuStackNavigator.Screen
-                name="Presión del Agua"
+                name="Temperatura y Humedad"
                 component={Presion}
             >
             </MenuStackNavigator.Screen>
 
             <MenuStackNavigator.Screen
-                name="Ph"
+                name="Lluvia"
                 component={Ph}
             ></MenuStackNavigator.Screen>
 
@@ -60,6 +61,11 @@ function MyStack() {
             <MenuStackNavigator.Screen
                 name="Temperatura"
                 component={Temperatura}
+            ></MenuStackNavigator.Screen>
+
+            <MenuStackNavigator.Screen
+                name="Ultrasonico"
+                component={Ultrasonico}
             ></MenuStackNavigator.Screen>
 
         </MenuStackNavigator.Navigator>
@@ -85,31 +91,6 @@ function MyTabs() {
                     tabBarIcon: ({ color, size }) => (
                         <MaterialCommunityIcons
                             name="card-bulleted"
-                            color={color}
-                            size={size}
-                        />
-                    )
-                }}></Tab.Screen>
-            <Tab.Screen
-                name="Inicio de Sesión"
-                component={Login}
-                options={{
-                    tabBarIcon: ({ color, size }) => (
-                        <MaterialCommunityIcons
-                            name="badge-account-horizontal"
-                            color={color}
-                            size={size}
-                        />
-                    )
-                }}
-            ></Tab.Screen>
-            <Tab.Screen
-                name="Configuración"
-                component={Herramientas}
-                options={{
-                    tabBarIcon: ({ color, size }) => (
-                        <MaterialCommunityIcons
-                            name="archive-cog"
                             color={color}
                             size={size}
                         />
