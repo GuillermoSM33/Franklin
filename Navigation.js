@@ -37,11 +37,6 @@ function MyStack() {
             </MenuStackNavigator.Screen>
 
             <MenuStackNavigator.Screen
-                name="Configuración"
-                component={Herramientas}
-            >
-            </MenuStackNavigator.Screen>
-            <MenuStackNavigator.Screen
                 name="Temperatura y Humedad"
                 component={Presion}
             >
